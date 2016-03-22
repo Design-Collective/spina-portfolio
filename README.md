@@ -2,7 +2,29 @@
 
 [Visit the website](http://www.spinacms.com)
 
-# Getting Started
+# Spina - Portfolio Plugin (WIP)
+
+This is a Spina CMS Plugin, based upon [denkGroot/spina-example-plugin](https://github.com/denkGroot/spina-example-plugin).
+
+## Requirements -- Features
+
+1. Manage Client Types
+2. Manage Clients
+3. Manage Projects
+
+## TODO:
+
+1. Rename models, controllers etc. in the repo
+2. Add missing models
+3. Generator
+4. Add admin tab & views (forms etc) for each model
+
+Also needed:
+
+5. Rails-API views & controllers
+
+
+# Instructions (pasted from original plugin)
 
 This is a Spina CMS plugin example, this project is meant to be cut into a gem and included in your parent Spina project.
 
