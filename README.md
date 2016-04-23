@@ -24,28 +24,28 @@ Also needed:
 5. Rails-API views & controllers
 
 
-# Instructions (pasted from original plugin)
+# Instructions
 
 This is a Spina CMS plugin example, this project is meant to be cut into a gem and included in your parent Spina project.
 
 To start using this project locally, first clone it and add the following lines to your Gemfile:
 
 ```
-gem 'spina-review', path: '/path/to/the/project'
+gem 'spina-portfolio', github: 'Design-Collective/spina-portfolio'
 ```
 
 Make sure you run the migration installer to get started.
 
 ```
-rails g spina_reviews:install
+rails g spina_portfolio:install
 ```
 
-This should copy the migration file required to create the Spina::Review model.
+This should copy the migration file required to create the Spina::Portfolio model.
 
-In your Spina project, make sure your selected theme has 'reviews' added to plugins
+In your Spina project theme initializer, make sure your selected theme has 'portfolio' added to plugins
 
 ```
-self.plugins = ['reviews']
+self.plugins = ['portfolio']
 ```
 
 Restart your server and head over to '/admin/pages', you should see your plugin located below the Media Library.
