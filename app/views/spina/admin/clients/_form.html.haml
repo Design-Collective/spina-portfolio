@@ -1,0 +1,34 @@
+= form_for [spina, :admin, @client], html: { autocomplete: "off" } do |f|
+  - content_for :notification_alert do
+    = error_explanation!(@client)
+
+  #page_content.tab-content.active
+    .table-container
+      %table.table.table-form
+        %tr
+          %td
+            Name
+          %td
+            = f.text_field :name
+        %tr
+          %td
+            Employee Name
+          %td
+            = f.text_field :employee_name
+        %tr
+          %td
+            Employee Title
+          %td
+            = f.text_field :employee_title
+        %tr
+          %td
+            Logo
+          %td
+            = f.file_field :logo
+  %button.button.button-primary{ type: 'submit', data: { icon: 'o' } }
+    Save Client
+
+  = link_to "Cancel", spina.admin_clients_path, class: 'button button-link'
+
+  - unless @client.new_record?
+    .pull-right= link_to "Delete", spina.admin_client_path(@client), method: :delete, data: {confirm: "Are you sure you want to remove this client?"}, class: 'button button-link button-danger'

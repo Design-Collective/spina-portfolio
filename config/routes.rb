@@ -1,5 +1,5 @@
 Spina::Engine.routes.draw do
   namespace :admin do
-    resources :reviews
+    resources :case_studies, :clients
   end
 end
