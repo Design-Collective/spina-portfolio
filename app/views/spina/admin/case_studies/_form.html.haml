@@ -12,14 +12,39 @@
             = f.text_field :title
         %tr
           %td
+            Subtitle
+          %td
+            = f.text_field :subtitle
+        %tr
+          %td
             Description
           %td
             = render 'spina/admin/shared/rich_text_field', form: f, field: :description
         %tr
           %td
-            Select Client
+            Client Name
           %td
-            = f.collection_select :spina_client_id, Spina::Client.all, :id, :name, prompt: true
+            = f.text_field :client_name
+        %tr
+          %td
+            Client Logo
+          %td
+            = f.file_field :client_logo
+        %tr
+          %td
+            Client Employee Name
+          %td
+            = f.text_field :employee_name
+        %tr
+          %td
+            Client Employee Title
+          %td
+            = f.text_field :employee_title
+        %tr
+          %td
+            Testimonial Content
+          %td
+            = render 'spina/admin/shared/rich_text_field', form: f, field: :testimonial
   %button.button.button-primary{ type: 'submit', data: { icon: 'o' } }
     Save Case Study
 

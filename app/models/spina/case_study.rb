@@ -1,6 +1,6 @@
 module Spina
   class CaseStudy < ActiveRecord::Base
-    belongs_to :client
+    mount_uploader :client_logo, PhotoUploader
     validates :title, :subtitle, :description, presence: true
   end
 end

@@ -60,7 +60,7 @@ module Spina
       end
 
       def case_study_params
-        params.require(:case_study).permit(:title, :subtitle, :description)
+        params.require(:case_study).permit(:title, :subtitle, :description, :client_name, :employee_name, :employee_title, :testimonial)
       end
     end
   end

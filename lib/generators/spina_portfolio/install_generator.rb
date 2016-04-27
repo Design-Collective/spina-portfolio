@@ -16,7 +16,7 @@ module SpinaPortfolio
       end
 
       def copy_migration_file
-        migration_template "create_spina_portfolio_tables.rb", Rails.root.join("db/migrate/create_spina_portfolio_tables.rb")
+        migration_template "create_spina_portfolio_table.rb", Rails.root.join("db/migrate/create_spina_portfolio_table.rb")
       end
 
       def run_migrations
