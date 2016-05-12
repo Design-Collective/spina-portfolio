@@ -28,7 +28,7 @@ module Spina
 
         add_breadcrumb "New Case study"
         if @case_study.save
-          redirect_to spina.admin_case_study_url, notice: "Case study successfully created."
+          redirect_to spina.admin_case_studies_url, notice: "Case study successfully created."
         else
           render :new
         end

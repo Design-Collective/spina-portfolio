@@ -44,7 +44,7 @@
           %td
             Testimonial Content
           %td
-            = render 'spina/admin/shared/rich_text_field', form: f, field: :testimonial
+            = f.text_field :testimonial
   %button.button.button-primary{ type: 'submit', data: { icon: 'o' } }
     Save Case Study
 
